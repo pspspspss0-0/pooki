@@ -1,0 +1,123 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f3efe4"><meta name="description" content="POKI — more than just a chat. A place to be yourself.">
+  <title>POKI — A little cat. A big world.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Patrick+Hand&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <div class="world-illustration" aria-hidden="true"></div>
+  <header class="mobile-top"><button class="icon-btn" id="mobileMenu" aria-label="Open menu">☰</button><a class="wordmark" href="#home">POKI<span>✦</span></a><button class="avatar tiny" aria-label="Your profile">🐈‍⬛</button></header>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="wordmark side-logo" href="#home">POKI<span>✦</span></a>
+      <p class="sidebar-note">A little cat.<br>A big world.</p>
+      <div class="side-rule"></div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-view="home"><span>⌂</span> Home</button>
+        <button class="nav-item" data-view="explore"><span>⌕</span> Explore</button>
+        <button class="nav-item" data-view="messages"><span>▱</span> Messages <i class="unread-dot"></i></button>
+        <button class="nav-item" data-view="friends"><span>♧</span> Friends</button>
+        <button class="nav-item" data-view="communities"><span>❋</span> Communities</button>
+        <button class="nav-item" data-view="events"><span>◷</span> Events</button>
+        <button class="nav-item" data-view="library"><span>▤</span> Library</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="cat-doodle">ฅ^•ﻌ•^ฅ</div><p>Be curious.<br>Be creative.<br>Be you.</p><span class="tiny-star">✳</span></div>
+      <div class="side-footer">POKI STUDIO · 2026</div>
+    </aside>
+
+    <main class="main-area" id="mainArea">
+      <header class="topbar"><div class="crumb"><span class="crumb-star">✳</span><span id="crumbText">A small corner of the internet</span></div><label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="Search people, places, or ideas…" aria-label="Search posts and people"><kbd>⌘ K</kbd></label><div class="top-actions"><button class="icon-btn" id="bellBtn" aria-label="Notifications">♧<i class="notification-dot"></i></button><button class="icon-btn" id="inboxBtn" aria-label="Messages">✉</button><button class="avatar" data-view="profile" aria-label="Open profile">🐈‍⬛</button></div></header>
+      <div class="mobile-search searchbox"><span>⌕</span><input id="mobileSearchInput" type="search" placeholder="Search POKI…" aria-label="Search POKI"></div>
+      <div class="workspace">
+        <section class="feed-column" id="feedColumn">
+          <div class="page-heading"><div><p class="eyebrow">SUNDAY, OCTOBER 25 <span>·</span> YOUR LITTLE UNIVERSE</p><h1 id="pageTitle">A good day to <em>wander.</em></h1><p class="heading-sub" id="pageSub">Somewhere between a thought and a story.</p></div><div class="heading-cat" aria-hidden="true">ฅ^•ﻌ•^ฅ<span>✧</span></div></div>
+          <section class="stories panel"><div class="section-head"><h2>Little moments</h2><button class="text-link" id="allStories">See all ↗</button></div><div class="story-row" id="storyRow">
+            <button class="story add-story" data-story="Your story"><span class="story-ring add-ring">＋</span><span>Your story</span></button>
+            <button class="story" data-story="Mina"><span class="story-ring"><span class="story-art art-one">☾</span></span><span>Mina</span></button>
+            <button class="story" data-story="Raven"><span class="story-ring"><span class="story-art art-two">♟</span></span><span>Raven</span></button>
+            <button class="story" data-story="Leaf"><span class="story-ring"><span class="story-art art-three">❋</span></span><span>Leaf</span></button>
+            <button class="story" data-story="Sora"><span class="story-ring"><span class="story-art art-four">☁</span></span><span>Sora</span></button>
+            <button class="story" data-story="Milo"><span class="story-ring"><span class="story-art art-five">✧</span></span><span>Milo</span></button>
+          </div></section>
+          <section class="compose panel"><div class="compose-top"><div class="avatar avatar-dark">🐈‍⬛</div><button class="compose-prompt" id="composePrompt">What’s on your mind, little wanderer?</button></div><div class="compose-bottom"><div class="compose-tools"><button data-compose="Photo">▧ <span>Photo</span></button><button data-compose="Feeling">☻ <span>Feeling</span></button><button data-compose="Thought">✎ <span>Thought</span></button></div><button class="ink-button" id="openComposer">Write a note <span>↗</span></button></div></section>
+          <div class="feed-filter"><span>FROM YOUR CORNER</span><button class="filter-pill active" data-filter="all">For you</button><button class="filter-pill" data-filter="following">Following</button><button class="filter-pill" data-filter="saved">Saved ✧</button></div>
+          <div id="postList" class="post-list">
+            <article class="post panel" data-author="Raven" data-category="following" data-search="Raven hiking forest mountain view quiet places outdoors travel"><div class="post-top"><div class="avatar avatar-raven">R</div><div class="post-author"><strong>Raven <span class="verified">✳</span></strong><span>@raven.afterhours · 2h ago</span></div><button class="more-btn" aria-label="Post options">···</button></div><p class="post-copy">Found this little spot while hiking today. The view was unreal. <span class="post-emoji">♟</span><br><span class="hand-note">the world gets quiet up here.</span></p><div class="landscape-art" role="img" aria-label="Hand drawn mountains, pine forest and a little cat beneath the moon"><div class="moon"></div><div class="mountain m1"></div><div class="mountain m2"></div><div class="mountain m3"></div><div class="ridge"></div><div class="pine pine-a">♠</div><div class="pine pine-b">♠</div><div class="pine pine-c">♠</div><div class="tiny-cat">🐈‍⬛</div><span class="art-caption">somewhere, far from everything</span></div><div class="post-actions"><button class="like-btn" aria-label="Like post">♡ <span>124</span></button><button class="comment-btn">▢ <span>18</span></button><button class="save-btn" aria-label="Save post">✧</button><span class="action-spacer"></span><span class="post-tag">#littleescapes</span></div><div class="comment-preview"><span class="mini-avatar">M</span><span><b>mina</b> this looks like a place from a dream ☾</span></div></article>
+            <article class="post panel" data-author="Sora" data-category="following" data-search="Sora late night chat stars tea moon friends"><div class="post-top"><div class="avatar avatar-sora">S</div><div class="post-author"><strong>Sora</strong><span>@sora.says · 4h ago</span></div><button class="more-btn" aria-label="Post options">···</button></div><p class="post-copy">Anyone up for a late night chat? <span class="post-emoji">☘</span><br><span class="hand-note">tea is ready. the moon is doing its thing.</span></p><div class="night-card"><span class="night-moon">☾</span><div class="night-stars">✦　·　✧　　·　✦</div><p>some nights are made<br>for saying the things<br>you can't say in daylight.</p><span class="night-sign">— a note to the night</span></div><div class="post-actions"><button class="like-btn" aria-label="Like post">♡ <span>53</span></button><button class="comment-btn">▢ <span>12</span></button><button class="save-btn" aria-label="Save post">✧</button><span class="action-spacer"></span><span class="post-tag">#afterhours</span></div></article>
+            <article class="post panel" data-author="Milo" data-category="suggested" data-search="Milo writing books creativity tiny steps story notebook"><div class="post-top"><div class="avatar avatar-milo">M</div><div class="post-author"><strong>Milo</strong><span>@milo.makes · 6h ago</span></div><button class="more-btn" aria-label="Post options">···</button></div><p class="post-copy">A reminder for the creative souls: you don't have to make something brilliant today. Just make something. <span class="post-emoji">✎</span></p><div class="quote-card"><span class="quote-mark">“</span><p>Small steps<br>make big stories.</p><span class="quote-doodle">✳</span><span class="quote-byline">A POKI LITTLE REMINDER</span></div><div class="post-actions"><button class="like-btn" aria-label="Like post">♡ <span>87</span></button><button class="comment-btn">▢ <span>9</span></button><button class="save-btn" aria-label="Save post">✧</button><span class="action-spacer"></span><span class="post-tag">#makestuff</span></div></article>
+          </div><div class="empty-state hidden" id="emptyState"><span>☁</span><h3>No little moments found</h3><p>Try another search, or wander somewhere new.</p></div>
+          <footer class="feed-footer">✳ &nbsp; YOU'VE REACHED A QUIET LITTLE CORNER &nbsp; ✳</footer>
+        </section>
+        <aside class="right-column">
+          <section class="welcome-card panel"><div class="welcome-top"><span class="eyebrow">A NOTE FROM POKI</span><span class="sun-doodle">☼</span></div><h2>Hey there,<br><em>little wanderer.</em></h2><p>This world is a little softer with you in it. Take a breath. Stay a while.</p><div class="welcome-bottom"><span>made for curious souls</span><span>♡</span></div></section>
+          <section class="side-section"><div class="section-head"><h2>Suggested spaces</h2><button class="text-link" data-view="communities">View all ↗</button></div><button class="space-row" data-space="The Forest"><span class="space-thumb forest-thumb">♠</span><span class="space-info"><strong>The Forest</strong><small>12.4k wanderers</small></span><span class="space-arrow">↗</span></button><button class="space-row" data-space="Art & Design"><span class="space-thumb art-thumb">✿</span><span class="space-info"><strong>Art & Design</strong><small>8.7k daydreamers</small></span><span class="space-arrow">↗</span></button><button class="space-row" data-space="Lost Places"><span class="space-thumb lost-thumb">⌂</span><span class="space-info"><strong>Lost Places</strong><small>6.3k explorers</small></span><span class="space-arrow">↗</span></button><button class="space-row" data-space="Music & Vibes"><span class="space-thumb music-thumb">♫</span><span class="space-info"><strong>Music & Vibes</strong><small>15.2k night owls</small></span><span class="space-arrow">↗</span></button></section>
+          <section class="side-section friends-section"><div class="section-head"><h2>People to meet</h2><button class="text-link" data-view="friends">View all ↗</button></div><div class="friend-row"><div class="avatar avatar-luna">L</div><div class="friend-info"><strong>Luna</strong><small>Photographer · 1.2k mutual</small></div><button class="follow-btn">Follow</button></div><div class="friend-row"><div class="avatar avatar-taro">T</div><div class="friend-info"><strong>Taro</strong><small>Illustrator · 980 mutual</small></div><button class="follow-btn">Follow</button></div><div class="friend-row"><div class="avatar avatar-milo">M</div><div class="friend-info"><strong>Milo</strong><small>Writer · 756 mutual</small></div><button class="follow-btn">Follow</button></div></section>
+          <section class="tiny-note"><span>✳</span><p>Different places,<br>same sky.</p><small>POKI FIELD NOTES · No. 001</small></section>
+          <div class="right-footer"><a href="#about">About</a><a href="#guidelines">Guidelines</a><a href="#privacy">Privacy</a><span>© POKI 2026</span></div>
+        </aside>
+      </div>
+    
+  <section class="messages-page hidden" id="messagesPage" aria-label="Messages">
+    <nav class="messages-rail"><button data-view="home">⌂</button><button class="rail-selected">▣</button><button data-view="friends">♧</button><button data-view="explore">⌁</button><button data-view="library">▤</button><button data-view="events">♧</button><button data-view="profile">⚙</button></nav>
+    <section class="conversation-list">
+      <header class="messages-heading"><h1>Messages</h1><button title="New message">✎</button></header>
+      <button class="conversation active" data-person="Lina Featherstone"><span class="contact-avatar lina"></span><span class="conversation-copy"><b>Lina Featherstone</b><small>That view looks incredible! ✦</small></span><time>10:24 AM</time></button>
+      <button class="conversation" data-person="The Wanderers"><span class="contact-avatar wanderers"></span><span class="conversation-copy"><b>The Wanderers</b><small>Kai: Yep, same place. Beautiful…</small></span><time>9:17 AM</time><i>3</i></button>
+      <button class="conversation" data-person="Raven"><span class="contact-avatar raven"></span><span class="conversation-copy"><b>Raven</b><small>Sent a photo</small></span><time>8:42 AM</time></button>
+      <button class="conversation" data-person="Milo"><span class="contact-avatar milo"></span><span class="conversation-copy"><b>Milo</b><small>Let’s meet there at 5?</small></span><time>7:36 AM</time></button>
+      <button class="conversation" data-person="The Archive"><span class="contact-avatar archive"></span><span class="conversation-copy"><b>The Archive</b><small>New story added: The Lost Valley</small></span><time>Yesterday</time><i>2</i></button>
+      <button class="conversation" data-person="Sora"><span class="contact-avatar sora"></span><span class="conversation-copy"><b>Sora</b><small>That’s so cool!</small></span><time>Yesterday</time></button>
+      <button class="conversation" data-person="Juno"><span class="contact-avatar juno"></span><span class="conversation-copy"><b>Juno</b><small>Shared a location</small></span><time>Mon</time></button>
+      <button class="conversation" data-person="Elias"><span class="contact-avatar elias"></span><span class="conversation-copy"><b>Elias</b><small>See you tomorrow.</small></span><time>Mon</time></button>
+      <button class="conversation" data-person="Maple & Oak"><span class="contact-avatar maple"></span><span class="conversation-copy"><b>Maple &amp; Oak</b><small>Oak: Perfect, thanks!</small></span><time>Sun</time><i>4</i></button>
+      <button class="conversation" data-person="The Northern Ridge"><span class="contact-avatar ridge"></span><span class="conversation-copy"><b>The Northern Ridge</b><small>New member joined the group</small></span><time>Sun</time></button>
+      <p class="list-footnote">A quieter place, together ✧</p>
+    </section>
+    <section class="message-thread">
+      <header class="thread-header"><span class="contact-avatar lina"></span><div><h2 id="threadName">Lina Featherstone</h2><small>● Online</small></div><span class="thread-tools">♧　▣　···</span></header>
+      <div class="thread-date"><span></span>Today<span></span></div>
+      <div class="chat-messages" id="chatMessages">
+        <div class="message-row incoming"><span class="contact-avatar lina"></span><div class="message-bubble">Hey! I just got back from the northern ridge.<br>The view was unreal. 🌲<small>9:48 AM</small></div></div>
+        <div class="message-row incoming photo-message"><span class="contact-avatar lina"></span><div class="shared-landscape" title="Mountain valley illustration"></div><small class="standalone-time">9:49 AM</small></div>
+        <div class="message-row outgoing"><div class="message-bubble">Wow… that’s incredible!<br>Did you go alone?<small>10:02 AM&nbsp; ✓✓</small></div><span class="contact-avatar self"></span></div>
+        <div class="message-row incoming"><span class="contact-avatar lina"></span><div class="message-bubble">No, I met a few travelers on the way.<br>We camped near the old stone bridge.<br>I’ll send more photos later.<small>10:15 AM</small></div></div>
+        <div class="message-row outgoing"><div class="message-bubble">Can’t wait! That place is on my list too. ✳<small>10:24 AM&nbsp; ✓✓</small></div><span class="contact-avatar self"></span></div>
+      </div>
+      <form class="message-composer" id="messageForm"><button type="button" aria-label="Attach">⌁</button><input id="messageInput" placeholder="Type a message…" autocomplete="off" aria-label="Type a message"><button type="button" aria-label="Emoji">☺</button><button class="send-message" type="submit" aria-label="Send">➤</button></form>
+    </section>
+    <aside class="contact-details"><div class="profile-landscape"></div><span class="contact-avatar lina profile-avatar"></span><h2>Lina Featherstone</h2><p>Explorer　·　Photographer　·　Dreamer</p><small>● Online</small><div class="contact-shortcuts"><button>♧</button><button>▤</button><button>▣</button><button>···</button></div><section class="shared-media"><header><b>Shared Media</b><span>24　›</span></header><div class="media-grid"><div class="media mountain"></div><div class="media deer"></div><div class="media forest"></div><div class="media cabin"></div><div class="media cat"></div><div class="media bridge"></div><div class="media branch"></div><div class="media tower"></div><div class="media tree"></div></div><div class="about-contact"><b>About</b><p>Collecting quiet moments, snowy roads and good conversations.</p>⌖　Northern Ridge</div></section><div class="sleeping-cat"></div></aside>
+  </section>
+</main>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile navigation"><button class="active" data-view="home"><span>⌂</span>Home</button><button data-view="explore"><span>⌕</span>Explore</button><button id="mobileCreate" class="mobile-create" aria-label="Create post">＋</button><button data-view="messages"><span>✉</span>Chat</button><button data-view="profile"><span>♙</span>Profile</button></nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog class="modal" id="composerModal"><form method="dialog" id="postForm"><div class="modal-head"><div><span class="eyebrow">A LITTLE PIECE OF YOU</span><h2>Leave a little note.</h2></div><button class="close-modal" aria-label="Close">×</button></div><label class="modal-label" for="postText">What's on your mind?</label><textarea id="postText" maxlength="500" placeholder="A thought, a story, a tiny thing you noticed…" required></textarea><div class="modal-bottom"><span id="charCount">0 / 500</span><button class="ink-button" type="submit">Share with the world ↗</button></div></form></dialog>
+  <dialog class="modal small-modal" id="detailModal"><form method="dialog"><button class="close-modal" aria-label="Close">×</button><span class="detail-icon" id="detailIcon">✳</span><h2 id="detailTitle">A little corner</h2><p id="detailText">Come on in.</p><button class="ink-button detail-action" id="detailAction" value="close">Sounds lovely ↗</button></form></dialog>
+  <script src="js/main.js"></script>
+</body></html>
+
+# POKI — a little cat, a big world
+
+A responsive static front-end prototype inspired by the supplied POKI concept board. Built with plain HTML, CSS and JavaScript; no build step or framework required.
+
+## Run locally
+Open `index.html` in a browser, or serve the folder with any static web server.
+
+## Deploy to Cloudflare Pages
+Upload the contents of this folder as the site root (the `index.html` file must be at the root). No build command is needed; the output directory is `/` if deploying from a direct upload, or the project root for a Git deployment.
+
+## Included interactions
+- Responsive desktop/mobile layouts and mobile navigation
+- Search posts by text
+- Create a local demo post
+- Like/save demo posts and follow suggested people
+- Story, community, profile, message and notification preview dialogs
+
+## Important
+This is a front-end demo. Posts and interactions are held in the current page session only; there is no login, shared database, upload storage, or real-time messaging yet. Google Fonts are optional enhancements; local system fallbacks are included.
